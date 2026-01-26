@@ -6,4 +6,9 @@
 nome = 'Luiz Otávio'  # String (str)
 idade = 32            # Inteiro (int)
 altura = 1.80        # Ponto flutuante (float)
-e_maior = idade > 18  # Booleano (bool)
+e_maior = idade >= 18  # Booleano (bool)
+
+int_um = int('1')  # Converte string para inteiro
+print(int_um, type(int_um ))  # Converte string para inteiro
+
+
