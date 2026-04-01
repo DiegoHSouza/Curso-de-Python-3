@@ -1,8 +1,8 @@
 horas = input('Que horas são?: ')
 
 try:
-    horas_numero = float(horas)
-    manha = horas_numero >= 0 and horas_numero <= 11
+    horas_numero = int(horas)
+    manha = 0 <= horas_numero <= 11
     tarde = horas_numero >= 12 and horas_numero <=17
     noite = horas_numero >= 18 and horas_numero <=23
 

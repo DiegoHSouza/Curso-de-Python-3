@@ -1,14 +1,15 @@
 nome = input('Digite seu primeiro nome: ')
-try:
-    curto = len(nome) <= 4
-    normal = len(nome) >= 5 and len(nome) <= 6
-    grande = len(nome) > 6
+tamanho_nome = len(nome)
+
+
+if nome.isalpha():
     
-    if curto:
-        print('Seu nome é curto')
-    if normal:
-        print('Seu nome é normal')
-    if grande:
-        print('Seu nome é grande')
-except:
-    print('Nome digitado invalido')
+    if tamanho_nome <=4:
+        print('Seu nome é curto!')
+    elif 5 <= tamanho_nome <=6:
+        print('Seu nome é normal!')
+    else:
+        print('Seu nome é grande!')
+
+else:
+    print('Digite apenas letras!')
